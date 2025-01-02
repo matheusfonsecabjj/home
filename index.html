@@ -13,6 +13,12 @@
         if (!isLoggedIn) {
             window.location.href = "https://matheusfonsecabjj.github.io/login/"; // Redireciona para o login
         }
+
+        // Função para fazer logout
+        function logout() {
+            localStorage.clear(); // Limpa os dados do usuário
+            window.location.href = "https://matheusfonsecabjj.github.io/login/"; // Redireciona para o login
+        }
     </script>
 </head>
 <body>
@@ -31,6 +37,7 @@
             <a href="https://matheusfonsecabjj.github.io/saida/">Saída</a>
             <a href="https://matheusfonsecabjj.github.io/lista/">Listagem</a>
             <a href="https://matheusfonsecabjj.github.io/mapa/">Mapeamento</a>
+            <a href="#" onclick="logout()">Logout</a> <!-- Botão de logout -->
         </div>
     </nav>
 
